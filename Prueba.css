@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e272e;
+}
+
+.Navegador {
+    position: relative;
+}
+
+.Navegador { 
+    background-color: #485460;
+    border-radius: .5rem;
+    display: inline-flex;
+    margin: 10px;
+    width: 97%;
+    padding: 10px;
+}
+
+.logopage {
+    width: 2.5rem;
+}
+
+/*Buscardor*/
+input[type="Search"]{
+    width: 10%;
+    border: 2px solid #dafff5;
+    border-radius: 9rem;
+    font-size: 14px;
+    transition: width 0.4s ease-in-out;
+    position: static;  
+    padding: .6rem;; 
+}
+
+input[type="Search"]:focus {
+    width: 35%;
+}
+/*Buscador -- Boton Buscar*/
+input[type="submit"] {
+    width: 5%;
+    border: 2px solid #dafff5;
+    border-radius: 9rem;
+    font-family: "Hack Nerd Font";
+    transition: all .2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #dafff5;
+    box-shadow: 1px 1px 2px,
+    -1px -1px 2px #dafff5;
+}
+
+/* .menu{
+    display: inline-flex;
+    justify-content: center;
+    background-color: #485460;
+    list-style: none;
+    width: 10%;
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.menu li {
+    padding: 3px;
+    margin: 3px;
+}
+
+#imglist {
+    width: 2rem;
+}
+
+#imglist:hover {
+    width: 2.1rem;
+}*/
+
+/*form de Iniciar Sesion*/
+#Sesion {
+    background-color:#485460;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: .3rem;
+    position: absolute;
+    right: 0;
+    margin: -5px 5px 0 0;
+}
+
+[class^="Sesion"] {
+    border-radius: .4rem;
+    font-family: "Hack Nerd Font";
+    width: 7rem;
+    margin: 6px;
+}
+/*Boton de Registrarse*/
+.Sesion_Registro {
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow:  -3px -3px 6px #c5c6c6,
+    3px 3px 6px #fff;
+}
+
+.Sesion_Registro:hover {
+    box-shadow: 3px 3px 6px #c5c6c6,
+    -3px -3px 6px #ffffff;
+}
+
+/*Boton de Iniciar Sesion*/
+.Sesion_Ingreso {
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+}
+
+.Sesion_Ingreso:hover {
+    box-shadow: -4px -4px 8px #c5c6c6,
+    4px 4px 8px #ffffff;
+}
+
+.masReciente {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border-radius: .3rem;
+    width: 35%;
+    background-color: rgba(0, 0, 24, 0.2)
+}
+
+/*Noticias*/
+.nt {
+    color: #ffffff;
+    font-family: "Hack Nerd Font";
+    font-size: 1rem;;
+}
+
+.np {
+    color: #fff;
+    font-family: "Hack Nerd Font";
+    font-style: italic;
+}
+
+.vm {
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    font-family: "Hack Nerd Font";
+    margin: auto;
+    width: 5rem;
+    height: 1.5rem;
+    background: #ffffff;
+    transition: all 0s;
+    box-shadow:  3px 3px 0px #b5b5b5,
+    -3px -3px 0px #ffffff;
+}
+
+.vm:active {
+    box-shadow:  -3px -3px 0px #b5b5b5,
+    3px 3px 0px #ffffff;
+    font-weight: bold;
+}
+
+.divprincipal {
+    display: inline-flex;
+}
+
+.mainContenido{ 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff0f0;
+    display: flex;
+    overflow: auto;
+    width: 800px;
+    height: 350px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 20px;
+}
+
+.carta  {
+    background-color: aqua;
+    flex: 0 0 50%;
+    padding: 30px;
+    scroll-snap-align: start;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    
+}
+
+/*.mainContenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 16px;
+}*/
+
+/*
+img {
+    max-height: 40vh;
+    -webkit-box-reflect: below -80px;
+    linear-gradient(to bottom,
+    rgba(0,0,0,0,0),
+    rgba(0,0,0,0,2));
+}
+*/
+
+/* Inicio */
+.inicio {
+    box-shadow: .5em 0 0 #dafff5;
+    width: 25ch;
+    overflow: hidden;
+    color: #dafff5;
+    white-space: nowrap;
+    animation: caret .5s step-end infinite alternate,
+    type 5s steps(19, end);
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes caret {
+    50% {
+        box-shadow:  .5em 0 0 transparent;
+    }
+}
+
+@use postcss-preset-env {
+    stage: 0;
+    autoprefixer: {
+        grid: true;    
+    }
+}
+
+.divinicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.divbotones .botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lib {
+    background-color: #dafff5;
+    list-style: none;
+    border: 2px solid #dafff5;
+    border-radius: 1rem;
+    width: 13rem;
+    height: 2rem;
+    text-align: center;
+    margin: 1rem;
+    font-family: "Hack Nerd Font";
+    font-weight: bold;
+}
+
+.lib:hover {
+    border-radius: 37px;
+    background: linear-gradient(145deg, #c4e6dd, #e9ffff);
+    box-shadow:  1px 1px 0px #d8fcf3,
+        -1px -1px 0px #dcfff7;
+}
+
+.mundoimg {
+    background-size: cover;
+    width: 35rem;
+    height: 30rem;
+}
+
+.divm {
+    display: inline-flex;
+    margin: 10px;
+    padding: 5px;
+    width: 36rem;
+    height: 25rem;
+}
+
+.mainini {
+    background-color: #1e272e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+}
+
+.divbotones {
+    margin: auto;
+}
+
+.muestra1 {
+    width: 32rem;
+    height: 25rem;
+}
+
+.pc1 {
+    color: aliceblue;
+    font-family: "Hack Nerd Font";
+    text-align: center;
+    font-size: 25px;
+}
+
+/*divgrid*/
+.divgrid {
+    background: #353b48;
+    margin: 10px;
+    padding: 10px;
+    height: 350px;
+}
+
+.divimage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+}
+
+.desc {
+    padding: 5px;
+    text-align: center;
+    color: #fff0f0;
+}
+
+.m1 {
+    width: 200px;
+    height: 300px;
+}
+
+.m1:hover {
+    opacity: 0.7;
+}
+
+/*div_ver*/
+div.ver {
+    display: grid;
+    place-items: center;
+}
+
+.recomview {
+    padding: 15px;
+    width: 60rem;
+    height: 30rem;
+}
+
+/*Footer*/
+footer.cc {
+    position: relative;
+    background-color: #485460;
+    padding: 10px;
+    height: 7rem;
+}
+
+.ulop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
+
+.lic {
+    display: inline-flex;
+    background-color: #353b48;
+    padding: .2rem;
+    border-radius: .3rem;
+}
+
+.lic a {
+    color: white;
+    text-decoration: none;
+}
+
+.ulop a:hover {
+    text-decoration: underline;
+}
+
+/*FooterRedes*/
+
+.Redes {
+    margin: 15px;
+    padding: 5px;
+}
+
+.Redes .ulop2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: .1rem;
+    list-style: none;
+}
+
+.ulop2 .lic1 {
+    color: white;
+    background-color: #39569c ;
+    padding: .2rem;
+    border-radius: .5rem;
+    width:fit-content;
+}
+
+.ulop2 .lic2 {
+    background-color: #3f729b;
+    padding: .2rem;
+    border-radius: .5rem;
+    width: fit-content;
+}
+
+.ulop2 .lic3 {
+    background-color: #00acee ;
+    padding: .2rem;
+    border-radius: .5rem;
+    width: fit-content;
+}
+
+.alink {
+    color: white;
+    text-decoration: none;
+}
+
+.alink:hover {
+    text-decoration: underline;
+}
+
+
+
+
